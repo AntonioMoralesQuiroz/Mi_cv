@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonio Morales Quiroz - Perfil Profesional & Proyectos</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .tab-active {
+            border-bottom: 3px solid #2563EB;
+            color: #2563EB;
+            font-weight: 700;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white; color: black; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800 font-sans antialiased min-h-screen">
+
+    <!-- Header / Navbar -->
+    <header class="bg-slate-900 text-white sticky top-0 z-50 shadow-md border-b-2 border-blue-600 no-print">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex flex-wrap justify-between items-center gap-4">
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-600 text-white p-2 rounded font-bold text-xl tracking-wider shadow">
+                    AMQ
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold leading-tight">Antonio de Jesús Morales Quiroz</h1>
+                    <p class="text-xs text-slate-400">Ingeniería en Telemática | Soporte, Redes & Automatización</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-2">
+                <button onclick="copyCoverLetter()" class="flex items-center space-x-1 bg-slate-800 hover:bg-slate-700 text-white text-xs px-3 py-2 rounded transition border border-slate-700">
+                    <i data-lucide="copy" class="w-4 h-4"></i>
+                    <span>Copiar Carta</span>
+                </button>
+                <button onclick="window.print()" class="flex items-center space-x-1 bg-blue-600 hover:bg-blue-700 text-white text-xs px-3 py-2 rounded transition font-medium shadow">
+                    <i data-lucide="printer" class="w-4 h-4"></i>
+                    <span>Imprimir / PDF</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-6xl mx-auto px-4 py-6">
+
+        <!-- Top Profile Banner -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-6 relative overflow-hidden">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+                <div>
+                    <div class="flex flex-wrap items-center gap-2 mb-2">
+                        <span class="inline-flex items-center space-x-1.5 bg-emerald-50 text-emerald-700 text-xs px-2.5 py-1 rounded-full font-medium border border-emerald-200">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <span>Disponible para Prácticas / Empleo TI</span>
+                        </span>
+                        <span class="bg-blue-50 text-blue-700 text-xs px-2.5 py-1 rounded-full font-medium border border-blue-100">
+                            Ingeniería en Telemática
+                        </span>
+                    </div>
+                    <h2 class="text-2xl font-bold text-gray-900">Antonio de Jesús Morales Quiroz</h2>
+                    <p class="text-gray-600 font-medium">Soporte Técnico Especializado | Redes e Infraestructura | Automatización Python</p>
+                    <p class="text-xs text-gray-500 mt-2 flex items-center gap-1">
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5 text-red-500"></i> San Luis Potosí, S.L.P. | Universidad Politécnica de San Luis Potosí
+                    </p>
+                </div>
+
+                <!-- Quick Contact Cards & Enlaces -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-2 w-full md:w-auto text-xs">
+                    <a href="tel:4443913715" class="flex items-center space-x-2 p-2 bg-gray-50 hover:bg-gray-100 rounded border border-gray-200 transition">
+                        <i data-lucide="phone" class="w-4 h-4 text-blue-600"></i>
+                        <span class="font-medium">444 391 3715</span>
+                    </a>
+                    <a href="mailto:amantonio1520@gmail.com" class="flex items-center space-x-2 p-2 bg-gray-50 hover:bg-gray-100 rounded border border-gray-200 transition">
+                        <i data-lucide="mail" class="w-4 h-4 text-blue-600"></i>
+                        <span class="font-medium">amantonio1520@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/antonio-de-jesus-morales-quiroz-5550663a7" target="_blank" class="flex items-center space-x-2 p-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded border border-blue-200 transition col-span-1 sm:col-span-2">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                        <span class="font-semibold">Perfil de LinkedIn</span>
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1ui21LjwU3xS4OORrTDtCPFiJrZFFzOfN?usp=sharing" target="_blank" class="flex items-center space-x-2 p-2 bg-slate-900 hover:bg-slate-800 text-white rounded transition col-span-1 sm:col-span-2">
+                        <i data-lucide="folder-git-2" class="w-4 h-4 text-blue-400"></i>
+                        <span class="font-semibold">Portafolio Evidencias (Drive)</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Resumen Rápido / Stats Extra -->
+            <div class="mt-6 pt-4 border-t border-gray-100 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                <div class="bg-slate-50 p-2.5 rounded-lg border border-gray-100">
+                    <p class="text-xs text-gray-500 uppercase font-semibold">Especialidad</p>
+                    <p class="text-sm font-bold text-slate-800">Redes & Soporte TI</p>
+                </div>
+                <div class="bg-slate-50 p-2.5 rounded-lg border border-gray-100">
+                    <p class="text-xs text-gray-500 uppercase font-semibold">Certificaciones</p>
+                    <p class="text-sm font-bold text-slate-800">6x Cisco Academy</p>
+                </div>
+                <div class="bg-slate-50 p-2.5 rounded-lg border border-gray-100">
+                    <p class="text-xs text-gray-500 uppercase font-semibold">Automatización</p>
+                    <p class="text-sm font-bold text-slate-800">Python & APIs</p>
+                </div>
+                <div class="bg-slate-50 p-2.5 rounded-lg border border-gray-100">
+                    <p class="text-xs text-gray-500 uppercase font-semibold">Proyecto Web Activo</p>
+                    <a href="https://alesep.com.mx/" target="_blank" class="text-sm font-bold text-blue-600 hover:underline inline-flex items-center gap-1">
+                        alesep.com.mx <i data-lucide="external-link" class="w-3 h-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="flex border-b border-gray-200 mb-6 bg-white rounded-t-xl shadow-sm px-4 no-print overflow-x-auto">
+            <button onclick="switchTab('letter')" id="tab-letter" class="py-3 px-6 text-sm font-medium text-gray-500 hover:text-blue-600 flex items-center space-x-2 whitespace-nowrap tab-active transition">
+                <i data-lucide="file-text" class="w-4 h-4"></i>
+                <span>Carta de Presentación</span>
+            </button>
+            <button onclick="switchTab('projects')" id="tab-projects" class="py-3 px-6 text-sm font-medium text-gray-500 hover:text-blue-600 flex items-center space-x-2 whitespace-nowrap transition">
+                <i data-lucide="folder-kanban" class="w-4 h-4"></i>
+                <span>Proyectos Destacados</span>
+            </button>
+            <button onclick="switchTab('cv')" id="tab-cv" class="py-3 px-6 text-sm font-medium text-gray-500 hover:text-blue-600 flex items-center space-x-2 whitespace-nowrap transition">
+                <i data-lucide="user-check" class="w-4 h-4"></i>
+                <span>Curriculum Vitae</span>
+            </button>
+            <button onclick="switchTab('skills')" id="tab-skills" class="py-3 px-6 text-sm font-medium text-gray-500 hover:text-blue-600 flex items-center space-x-2 whitespace-nowrap transition">
+                <i data-lucide="cpu" class="w-4 h-4"></i>
+                <span>Habilidades & Certificaciones</span>
+            </button>
+        </div>
+
+        <!-- TAB 1: CARTA DE PRESENTACION -->
+        <div id="content-letter" class="tab-content block">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-8 relative">
+                <div class="mb-6 text-sm text-gray-600 border-b border-gray-100 pb-4">
+                    <p><strong>Lugar y Fecha:</strong> San Luis Potosí, S.L.P., a 1 de octubre de 2026</p>
+                    <p><strong>Asunto:</strong> Postulación a Prácticas Profesionales en Tecnologías de la Información – Antonio de Jesús Morales Quiroz</p>
+                </div>
+
+                <div class="space-y-4 text-gray-800 text-justify leading-relaxed text-sm md:text-base py-2" id="letter-text">
+                    <p class="font-semibold text-gray-900">At'n: Equipo de Reclutamiento y Selección / Atracción de Talento</p>
+                    <p class="font-semibold text-gray-900">Estimado equipo de selección:</p>
+
+                    <p>Soy estudiante de Ingeniería en Telemática en la Universidad Politécnica de San Luis Potosí y me dirijo a ustedes con el firme propósito de postularme como practicante profesional en el área de Tecnologías de la Información, Redes e Infraestructura. Me motiva especialmente la oportunidad de integrarme a una organización caracterizada por su innovación y compromiso operativo, donde pueda aplicar mis competencias técnicas y contribuir de manera efectiva a sus objetivos tecnológicos.</p>
+
+                    <p>Cuento con experiencia práctica acumulada en soporte técnico presencial, mantenimiento preventivo y correctivo de cómputo, diagnóstico de fallas en hardware y software, administración de sistemas Windows, telefonía, Access Points e inventarios tecnológicos. En el ámbito de infraestructura física, poseo experiencia en el diseño, canalización, conectorización RJ45 y tendido de cableado estructurado para redes LAN, organización de racks y montaje de sistemas CCTV IP bajo estándares de la industria.</p>
+
+                    <p>Adicionalmente, he desarrollado herramientas en Python orientadas a la automatización de procesos internos, auditoría de datos y desarrollo de sistemas de gestión mediante APIs como RouterOS de MikroTik, así como proyectos de despliegue web corporativo como <a href="https://alesep.com.mx/" target="_blank" class="text-blue-600 font-semibold underline">alesep.com.mx</a>. Mi formación práctica se complementa con diversas certificaciones de <strong>Cisco Networking Academy</strong> en configuración de dispositivos, direccionamiento IP, seguridad perimetral y programación.</p>
+
+                    <p>Mi objetivo es aportar valor real a la continuidad operativa del departamento, resolver incidencias con prontitud y construir una trayectoria sólida que me permita desarrollarme profesionalmente dentro de su empresa.</p>
+
+                    <p>Agradezco de antemano la atención brindada a la presente y me pongo a su entera disposición para coordinar una entrevista.</p>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-gray-100 text-sm">
+                    <p class="text-gray-600">Atentamente,</p>
+                    <div class="my-4 pt-4 border-b border-gray-300 w-64"></div>
+                    <p class="font-bold text-gray-900 text-base">Antonio de Jesús Morales Quiroz</p>
+                    <p class="text-gray-600">Estudiante de Ingeniería en Telemática</p>
+                    <p class="text-xs text-gray-500 mt-1">Teléfono: 444 391 3715 | Correo: amantonio1520@gmail.com</p>
+                    <div class="flex items-center gap-3 mt-2 text-xs">
+                        <a href="https://www.linkedin.com/in/antonio-de-jesus-morales-quiroz-5550663a7" target="_blank" class="text-blue-600 hover:underline flex items-center gap-1">
+                            <i data-lucide="linkedin" class="w-3.5 h-3.5"></i> LinkedIn
+                        </a>
+                        <span class="text-gray-300">|</span>
+                        <a href="https://alesep.com.mx/" target="_blank" class="text-blue-600 hover:underline flex items-center gap-1">
+                            <i data-lucide="globe" class="w-3.5 h-3.5"></i> Sitio Web Demostrativo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2: PROYECTOS DESTACADOS -->
+        <div id="content-projects" class="tab-content hidden">
+            
+            <!-- Indicador / Filtro Informativo Extra -->
+            <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 flex items-center justify-between flex-wrap gap-2 text-xs text-blue-900">
+                <div class="flex items-center gap-2">
+                    <i data-lucide="info" class="w-4 h-4 text-blue-600"></i>
+                    <span><strong>Proyectos Prácticos & Desarrollo:</strong> Soluciones implementadas en escenarios reales de infraestructura, automatización y despliegue web.</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <!-- Proyecto 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:border-blue-300 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-[10px] bg-blue-100 text-blue-700 font-bold px-2 py-0.5 rounded uppercase">Infraestructura & Redes</span>
+                            <i data-lucide="network" class="w-5 h-5 text-blue-600"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-base mb-2">Diseño de Infraestructura de Red Empresarial</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed mb-3">
+                            Diseño integral de una infraestructura de red empresarial, contemplando levantamiento de requerimientos, topología física y lógica, cableado estructurado, segmentación mediante VLAN, red inalámbrica y telefonía IP.
+                        </p>
+                        <p class="text-xs text-gray-500 bg-gray-50 p-2.5 rounded border border-gray-100">
+                            <strong>Entregables:</strong> Elaboración de planos, documentación técnica y memoria del proyecto, considerando estándares ANSI/TIA y buenas prácticas de telecomunicaciones.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex items-center gap-2">
+                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">VLANs</span>
+                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">ANSI/TIA</span>
+                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">VoIP</span>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:border-emerald-300 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-[10px] bg-emerald-100 text-emerald-700 font-bold px-2 py-0.5 rounded uppercase">Python & MikroTik</span>
+                            <i data-lucide="router" class="w-5 h-5 text-emerald-600"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-base mb-2">Administrador de Redes Hotspot para MikroTik</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed mb-3">
+                            Desarrollo de una aplicación para automatizar la administración de usuarios y perfiles Hotspot en equipos MikroTik mediante RouterOS API.
+                        </p>
+                        <p class="text-xs text-gray-500 bg-gray-50 p-2.5 rounded border border-gray-100">
+                            <strong>Características:</strong> Generación masiva de usuarios, administración de planes, creación de credenciales y gestión desde una interfaz gráfica interactiva en Python.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex items-center gap-2">
+                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">MikroTik API</span>
+                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Python GUI</span>
+                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Hotspot</span>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:border-purple-300 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-[10px] bg-purple-100 text-purple-700 font-bold px-2 py-0.5 rounded uppercase">Automatización TI</span>
+                            <i data-lucide="bot" class="w-5 h-5 text-purple-600"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-base mb-2">Automatización de Procesos Empresariales</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed mb-3">
+                            Desarrollo de herramientas para automatizar tareas administrativas y procesamiento de información, incluyendo gestión de archivos Excel, validación de bases de datos y generación de reportes.
+                        </p>
+                        <p class="text-xs text-gray-500 bg-gray-50 p-2.5 rounded border border-gray-100">
+                            <strong>Impacto:</strong> Implementación de interfaces gráficas y procesos automatizados que reducen la carga manual y aumentan la eficiencia operativa.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex items-center gap-2">
+                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Python Scripting</span>
+                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Excel Automation</span>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:border-amber-300 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-[10px] bg-amber-100 text-amber-700 font-bold px-2 py-0.5 rounded uppercase">Data & Auditoría</span>
+                            <i data-lucide="mail-search" class="w-5 h-5 text-amber-600"></i>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-base mb-2">Sistema de Auditoría de Rebotes de Correo</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed mb-3">
+                            Desarrollo de una herramienta para analizar automáticamente mensajes de rebote mediante protocolo IMAP e identificar direcciones de correo inválidas.
+                        </p>
+                        <p class="text-xs text-gray-500 bg-gray-50 p-2.5 rounded border border-gray-100">
+                            <strong>Stack:</strong> Python, Pandas, OpenPyXL y Tkinter para la automatización de depuración de bases de datos y generación de reportes con historial de auditoría.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-gray-100 flex items-center gap-2">
+                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">IMAP</span>
+                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Pandas</span>
+                        <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Tkinter</span>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 (Destacado Especial con Link a alesep.com.mx) -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border-2 border-blue-500/30 hover:border-blue-600 transition md:col-span-2 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-[9px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
+                        Enlace Activo
+                    </div>
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-[10px] bg-indigo-100 text-indigo-700 font-bold px-2 py-0.5 rounded uppercase">Desarrollo Web & Mantenimiento</span>
+                        <i data-lucide="globe" class="w-5 h-5 text-indigo-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-lg mb-2 flex items-center gap-2">
+                        <span>Desarrollo y Mantenimiento de Sitio Web Corporativo</span>
+                    </h3>
+                    <p class="text-xs text-gray-600 leading-relaxed mb-3">
+                        Desarrollo e implementación de un sitio web corporativo para una empresa externa, estructurando las páginas, contenido y componentes necesarios para su correcto funcionamiento. Configuración y optimización para su publicación en entorno de hosting, asegurando navegación fluida y optimización de recursos.
+                    </p>
+                    <p class="text-xs text-gray-500 bg-gray-50 p-2.5 rounded border border-gray-100 mb-4">
+                        <strong>Seguridad & Mantenimiento:</strong> Implementación de mejoras de seguridad, actualización constante de componentes, fortalecimiento de formularios y aplicación de buenas prácticas para mitigar vulnerabilidades.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-gray-100">
+                        <div class="flex items-center gap-2">
+                            <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Hosting</span>
+                            <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">Web Security</span>
+                            <span class="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded">HTML/CSS/JS</span>
+                        </div>
+                        <a href="https://alesep.com.mx/" target="_blank" class="inline-flex items-center space-x-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs px-4 py-2 rounded-lg font-medium transition shadow-sm">
+                            <span>Visitar alesep.com.mx</span>
+                            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- TAB 3: CURRICULUM VITAE -->
+        <div id="content-cv" class="tab-content hidden">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Sidebar -->
+                <div class="space-y-6">
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                        <h3 class="text-md font-bold text-gray-900 border-b-2 border-blue-600 pb-2 mb-3 flex items-center gap-2">
+                            <i data-lucide="user" class="w-4 h-4 text-blue-600"></i> Perfil Profesional
+                        </h3>
+                        <p class="text-xs text-gray-600 leading-relaxed text-justify">
+                            Estudiante de Ingeniería en Telemática con experiencia práctica en soporte técnico, redes e infraestructura TI. Experiencia en diagnóstico y resolución de incidencias de hardware, software y conectividad, configuración de equipos de red, sistemas Windows, Access Points y servicios de TI. Desarrollo de herramientas en Python para automatización de procesos internos.
+                        </p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                        <h3 class="text-md font-bold text-gray-900 border-b-2 border-blue-600 pb-2 mb-3 flex items-center gap-2">
+                            <i data-lucide="graduation-cap" class="w-4 h-4 text-blue-600"></i> Educación
+                        </h3>
+                        <div class="text-xs">
+                            <p class="font-bold text-gray-800">Universidad Politécnica de San Luis Potosí</p>
+                            <p class="text-blue-600 font-medium">Ingeniería en Telemática</p>
+                            <p class="text-gray-500 mt-1">2020 – Diciembre 2026 (Estimado)</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                        <h3 class="text-md font-bold text-gray-900 border-b-2 border-blue-600 pb-2 mb-3 flex items-center gap-2">
+                            <i data-lucide="link" class="w-4 h-4 text-blue-600"></i> Enlaces Directos
+                        </h3>
+                        <div class="text-xs space-y-2">
+                            <a href="https://www.linkedin.com/in/antonio-de-jesus-morales-quiroz-5550663a7" target="_blank" class="flex items-center justify-between p-2 bg-gray-50 hover:bg-gray-100 rounded text-gray-700 transition">
+                                <span class="flex items-center gap-1.5"><i data-lucide="linkedin" class="w-3.5 h-3.5 text-blue-600"></i> LinkedIn</span>
+                                <i data-lucide="arrow-up-right" class="w-3 h-3 text-gray-400"></i>
+                            </a>
+                            <a href="https://alesep.com.mx/" target="_blank" class="flex items-center justify-between p-2 bg-gray-50 hover:bg-gray-100 rounded text-gray-700 transition">
+                                <span class="flex items-center gap-1.5"><i data-lucide="globe" class="w-3.5 h-3.5 text-blue-600"></i> Sitio alesep.com.mx</span>
+                                <i data-lucide="arrow-up-right" class="w-3 h-3 text-gray-400"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-xl shadow-sm border border-gray-200">
+                        <h3 class="text-md font-bold text-gray-900 border-b-2 border-blue-600 pb-2 mb-3 flex items-center gap-2">
+                            <i data-lucide="languages" class="w-4 h-4 text-blue-600"></i> Idiomas
+                        </h3>
+                        <div class="text-xs space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-gray-700">Español:</span>
+                                <span class="bg-gray-100 text-gray-800 px-2 py-0.5 rounded text-[10px]">Nativo</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="font-medium text-gray-700">Inglés:</span>
+                                <span class="bg-blue-50 text-blue-700 font-bold px-2 py-0.5 rounded text-[10px] border border-blue-100">A2 (Básico)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="md:col-span-2 space-y-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                        <h3 class="text-lg font-bold text-gray-900 border-b-2 border-blue-600 pb-2 mb-4 flex items-center gap-2">
+                            <i data-lucide="briefcase" class="w-5 h-5 text-blue-600"></i> Experiencia Laboral
+                        </h3>
+
+                        <div class="space-y-6">
+                            <!-- Job 1 -->
+                            <div class="relative pl-4 border-l-2 border-blue-600">
+                                <div class="absolute -left-[7px] top-0 w-3 h-3 rounded-full bg-blue-600"></div>
+                                <div class="flex justify-between items-start flex-wrap gap-1">
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 text-sm">Practicante de Sistemas e Infraestructura</h4>
+                                        <p class="text-xs font-semibold text-blue-600">Solutions Consulting Learning</p>
+                                    </div>
+                                    <span class="text-[11px] bg-gray-100 px-2.5 py-0.5 rounded-full text-gray-600 font-medium">Abril 2026 – Septiembre 2026</span>
+                                </div>
+                                <ul class="mt-2 text-xs text-gray-600 space-y-1.5 list-disc list-inside">
+                                    <li>Soporte técnico presencial a usuarios en hardware, software, conectividad y periféricos.</li>
+                                    <li>Mantenimiento preventivo y correctivo de cómputo, diagnóstico y sustitución de componentes.</li>
+                                    <li>Instalación, configuración y puesta a punto de SO Windows y software corporativo.</li>
+                                    <li>Configuración y mantenimiento de impresoras de red/locales y Access Points para cobertura Wi-Fi.</li>
+                                    <li>Administración de conmutador telefónico analógico y configuración de extensiones.</li>
+                                    <li>Control de inventario de equipos de cómputo e infraestructura tecnológica.</li>
+                                    <li><strong>Desarrollo en Python:</strong> Automatización de procesos internos y gestión de datos administrativos.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Job 2 -->
+                            <div class="relative pl-4 border-l-2 border-gray-300">
+                                <div class="absolute -left-[7px] top-0 w-3 h-3 rounded-full bg-gray-400"></div>
+                                <div class="flex justify-between items-start flex-wrap gap-1">
+                                    <div>
+                                        <h4 class="font-bold text-gray-900 text-sm">Técnico de Campo – Redes y Cableado Estructurado</h4>
+                                        <p class="text-xs font-semibold text-gray-700">Voz y Datos del Potosí</p>
+                                    </div>
+                                    <span class="text-[11px] bg-gray-100 px-2.5 py-0.5 rounded-full text-gray-600 font-medium">Julio 2025 – Enero 2026</span>
+                                </div>
+                                <ul class="mt-2 text-xs text-gray-600 space-y-1.5 list-disc list-inside">
+                                    <li>Instalación de cableado estructurado para voz, datos y CCTV (tendido, canalización y conectorización RJ45).</li>
+                                    <li>Montaje, configuración y puesta en marcha de cámaras CCTV IP y Access Points inalámbricos.</li>
+                                    <li>Diagnóstico y resolución de fallas en infraestructura física de red y enlaces de comunicación.</li>
+                                    <li>Implementación de redes LAN, realización de pruebas de conectividad y validación de servicios.</li>
+                                    <li>Identificación, etiquetado y organización de nodos, racks y puntos de red.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 4: HABILIDADES Y CERTIFICACIONES -->
+        <div id="content-skills" class="tab-content hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Certificaciones Cisco -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="text-lg font-bold text-gray-900 border-b-2 border-blue-600 pb-3 mb-4 flex items-center gap-2">
+                        <i data-lucide="shield-check" class="w-5 h-5 text-blue-600"></i> Certificaciones Cisco Networking Academy
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-start space-x-3 p-2 hover:bg-gray-50 rounded-lg transition border border-transparent hover:border-gray-100">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-xs font-bold text-gray-800">Computer Hardware Basics</p>
+                                <p class="text-[11px] text-gray-500">Fundamentos de arquitectura y mantenimiento de hardware.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 p-2 hover:bg-gray-50 rounded-lg transition border border-transparent hover:border-gray-100">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-xs font-bold text-gray-800">Networking Basics</p>
+                                <p class="text-[11px] text-gray-500">Principios de comunicación, protocolos e infraestructura de red.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 p-2 hover:bg-gray-50 rounded-lg transition border border-transparent hover:border-gray-100">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-xs font-bold text-gray-800">Networking Devices and Initial Configuration</p>
+                                <p class="text-[11px] text-gray-500">Configuración inicial y gestión de Routers y Switches Cisco.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 p-2 hover:bg-gray-50 rounded-lg transition border border-transparent hover:border-gray-100">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-xs font-bold text-gray-800">Network Addressing and Basic Troubleshooting</p>
+                                <p class="text-[11px] text-gray-500">Subnetting IPv4, diagnóstico y resolución de problemas de red.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 p-2 hover:bg-gray-50 rounded-lg transition border border-transparent hover:border-gray-100">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-xs font-bold text-gray-800">Network Support and Security</p>
+                                <p class="text-[11px] text-gray-500">Soporte técnico, seguridad perimetral y políticas de acceso.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 p-2 hover:bg-gray-50 rounded-lg transition border border-transparent hover:border-gray-100">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-xs font-bold text-gray-800">Python Essentials 1</p>
+                                <p class="text-[11px] text-gray-500">Programación modular en Python para scripting y automatización.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stack Tecnológico -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="text-lg font-bold text-gray-900 border-b-2 border-blue-600 pb-3 mb-4 flex items-center gap-2">
+                        <i data-lucide="code-2" class="w-5 h-5 text-blue-600"></i> Stack Tecnológico & Competencias
+                    </h3>
+
+                    <div class="space-y-4 text-xs">
+                        <div>
+                            <h4 class="font-bold text-gray-700 uppercase tracking-wider text-[11px] mb-1.5">Redes e Infraestructura</h4>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">MikroTik RouterOS</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">Cisco Packet Tracer</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">Subnetting IPv4</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">VLANs & Trunking</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">DHCP / DNS</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">Access Points Wi-Fi</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-gray-700 uppercase tracking-wider text-[11px] mb-1.5">Sistemas & Virtualización</h4>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">Windows Server / Client</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">Ubuntu Linux</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">VirtualBox</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">OpenMediaVault</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">Conmutadores PBX</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-gray-700 uppercase tracking-wider text-[11px] mb-1.5">Programación & Datos</h4>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-blue-50 text-blue-700 border border-blue-200 px-2 py-1 rounded font-bold">Python</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">Tkinter GUI</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">Pandas / OpenPyXL</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">IMAP Protocol</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">SQL</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">HTML / CSS / PHP</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold text-gray-700 uppercase tracking-wider text-[11px] mb-1.5">Infraestructura Física & Web</h4>
+                            <div class="flex flex-wrap gap-1.5">
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">Cableado Estructurado</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">Conectorización RJ45</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">Racks & Patch Panels</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">CCTV IP</span>
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded font-medium">Hosting & Web Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-6xl mx-auto px-4 py-6 border-t border-gray-200 text-center text-xs text-gray-500 no-print">
+        <p>© 2026 Antonio de Jesús Morales Quiroz — Portafolio Profesional & CV Interactivo.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Lucide Icons Initialization
+        lucide.createIcons();
+
+        // Fixed Tab Switch Logic
+        function switchTab(tabName) {
+            // Hide all contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(el => {
+                el.classList.add('hidden');
+                el.classList.remove('block');
+            });
+
+            // Reset all tab button styles
+            const buttons = document.querySelectorAll('button[id^="tab-"]');
+            buttons.forEach(btn => {
+                btn.classList.remove('tab-active');
+                btn.classList.add('text-gray-500');
+            });
+
+            // Show current content
+            const targetContent = document.getElementById('content-' + tabName);
+            if(targetContent) {
+                targetContent.classList.remove('hidden');
+                targetContent.classList.add('block');
+            }
+
+            // Activate current button
+            const activeBtn = document.getElementById('tab-' + tabName);
+            if(activeBtn) {
+                activeBtn.classList.add('tab-active');
+                activeBtn.classList.remove('text-gray-500');
+            }
+        }
+
+        // Copy Letter to Clipboard
+        function copyCoverLetter() {
+            const letterElement = document.getElementById('letter-text');
+            navigator.clipboard.writeText(letterElement.innerText).then(() => {
+                alert('¡Carta de presentación copiada al portapapeles exitosamente!');
+            }).catch(err => {
+                console.error('Error al copiar: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
